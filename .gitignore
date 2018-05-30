@@ -3,6 +3,4 @@
 .settings
 .idea
 .DS_Store
-vendor
 composer.lock
-conf/conf.php
