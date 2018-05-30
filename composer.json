@@ -1,0 +1,31 @@
+{
+	"name" : "dmsapi/frameDemo",
+	"description" : "A PHP frame",
+	"type" : "library",
+	"license" : "MIT",
+	"keywords" : [
+		"frame"
+	],
+	"require" : {
+		"php" : ">=7.0.0",
+		"phpunit/phpunit" : "6.5.5",
+		"l-queue/l-client" : "0.0.4",
+		"google/protobuf" : "^3.5",
+		"dmsapi/frame" : "0.0.12"
+	},
+	"repositories" : [{
+			"type" : "vcs",
+			"url" : "git@git.linewin.cc:composer/dmsapi.git",
+			"name" : "dmsapi/frame"
+		}, {
+			"type" : "vcs",
+			"url" : "git@git.linewin.cc:composer/queue.git",
+			"name" : "l-queue/l-client"
+		}
+	],
+	"autoload" : {
+		"psr-4" : {
+			"app\\" : "app"
+		}
+	}
+}
